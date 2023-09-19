@@ -1,0 +1,353 @@
+/* Standard-CSS für www.projektname.de */
+
+/* Wichtige Farben
+Name Farbe 1 		= #
+Name Farbe 2		= #
+*/
+
+/* Hier werden alle html-Tags auf "Null" gesetzt und eine Standard-Schriftart vergeben */
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	color: #292929;
+	border: none; 
+	}
+
+
+
+/*################################## body ####################################*/
+
+body {
+	background-image: url(../images/allgemein/mosaik_raute.gif);
+	background-position: 0px -11px;
+	font-size: 12px;
+	background-repeat: repeat;
+}
+
+/*################################## Hier allgemeingueltige Formatierungen ####################################*/
+
+a { 
+  text-decoration:none;
+  color: #000;
+}
+
+h1 {
+	font-size: 18px;
+	float: left;
+	line-height: 10px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+
+/* ################################## header #################################### */
+/**/
+#header {
+	height: 150px;
+	width: 960px;
+	background-color: #FFF;
+	margin: auto;/*hier wird die zentrierte Position des headers bestimmt. Der header richtet sich so immer automatisch zentriert im Browserfenster an*/
+	position: relative;/*Die Position des headers muss relativ sein, damit sich die Elemente, die im header liegen wie, logo, nav1 und nav2 am header ausrichten*/
+	-webkit-box-shadow:0px 0px 15px #CCCCCC;
+	-moz-box-shadow: 0px 0px 15px#CCCCCC;
+	box-shadow: 0px 0px 15px#CCCCCC;
+	/*Hier wird der Schatten vom header bestimmt.Webkit, moz und box sind die verschiedenen browser, in denen die website angezeigt werden kann. Die erste Größe bestimmt die horizontale Ausrichtung, die zweißte Größe bestimmt            die vertikale Ausrichtung und die dritte Größe bestimmt die Größe des Schattens. Der Code hinter der Rauter bestimmt die Farbe des Schattens. */
+}
+#header #logo {
+	height: 64px;
+	width: 140px;
+	position: absolute;/*mit position absolut kann das logo durch die Angabe von Koordinaten (px-genau) im header angeordnet werden*/
+	left: 42px;
+	top: 46px;
+}
+
+.font36bold {/*diese Klasse, bestimmt die Eigenschaften von STEFANIE im logo*/
+	font-size: 36px;
+	line-height: 35px;
+	font-weight: bold;
+}
+.font40bold {/*diese Klasse, bestimmt die Eigenschaften von GÜNTER im logo*/
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+/*############################### HEADER // Navigation 1 ##################################*/
+
+#header #nav1 {
+	position: absolute;
+	top: 94px;
+	height: 20px;
+	width: 250px;
+	right: 41px;
+	color: #989898;
+}
+#header #nav1 li {
+	text-align: right;/*die Liste für nav1 muss rückwärts aufgelistet werden. Der Text soll sich rechts ausrichten und nach rechst floaten, was durch Zeile 88 und 89*/
+	float: right;
+	margin-left: 20px;/*Jedes Listenelement bekommt einen Abstand nach links*/
+	list-style-type: none;/*die Liste soll keine Zeichen am Anfang eines jeden Elements stehen haben */
+	font-size: 18px;
+}
+#header #nav1 li a {/*hier werden die Eigenschaften des links bestimmt. Jedes Listenelement ist ein Link*/
+	color: #989898;
+}
+#header #nav1 li a:hover {/*hier werden die Effekte bestimmt, die beim drüberfahren mit der Maus angezeigt werden sollen*/
+	color: #292929;
+}
+
+/*############################### HEADER // Navigation 2 ##################################*/
+
+#header #nav2 {
+	position: absolute;
+	height: 17px;
+	width: 720px;
+	top: 123px;
+	right: 41px;
+	font-size: 12px;
+	color: #292929;
+}
+#header #nav2 ul li {
+	text-align: right;
+	float: right;
+	margin-left: 15px;
+	list-style-type: none;
+}
+#header #nav2 li a {
+	color: #292929;
+}
+#header #nav2 ul li a:hover {
+	color: #8faa11;
+}
+
+/*############################### wrapper ##################################*/
+
+#wrapper {
+	background-color: #FFF;
+	height: 100%; /*Versuch das Springe zu verhindern */
+	width: 960px;
+	margin-top: 46px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	-webkit-box-shadow: 0px 0px 15px #CCCCCC;
+	-moz-box-shadow: 0px 0px 15px#CCCCCC;
+	box-shadow: 0px 0px 15px #CCCCCC;/*Hier wird der Schatten vom wrapper bestimmt.Webkit, moz und box sind die verschiedenen browser, in denen die website angezeigt werden kann. Die erste Größe bestimmt die horizontale  			    Ausrichtung, die zweißte Größe bestimmt die vertikale Ausrichtung und die dritte Größe bestimmt die Größe des Schattens. Die Zahl hinter der Raute bestimmt die Farbe *//*############################### Inhalt wrapper / content ##################################*/
+
+}
+#wrapper #content {
+	/*height: auto;/*die Höhe des contents  orientiert sich automatisch am Inhalt des contents*/
+	width: 877px;
+	margin: 0 auto; /* 1. Wert ist für oben und unten, 2. Wert ist für links und rechts */
+}
+
+#wrapper #content #startbild {/*die Eigenschaften des Startbilds wiederholen sich auf jeder Projektseite. Nur der Inhalt, also das Bild ansich ändert sich*/
+	height: auto;
+	width: 877px;
+	padding-bottom: 0px;
+}
+#wrapper #content .bild {/*Jedes Bild auf den Projektseiten bekommt die selbe Klasse zugewiesen. So können Eigenschaften bequem für alle Bilder gleichzeitig geändert werden. Achtung: Klassen können auf mehrere Objekte angewendet werden, eine id hingegen muss eindeutig sein*/
+	height: auto;
+	width: 877px;
+	padding-top: 20px;
+}
+#wrapper #content .text {/*Für die Texte unter den Bildern auf den Projektseiten gilt das gleiche wie für die Bilder. Jeder Text bekommt die gleiche Klasse*/
+	height: auto;
+	width: 511px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	line-height: 16px;
+}
+
+#wrapper #footer {
+	text-align: right;
+	width: 877px;
+	height: 30px;
+	clear: both;
+	color: #999;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 20px;
+}
+#wrapper #footer ul li {
+	text-align: right;
+	float: right;
+	height: 20px;
+	width: 75px;
+	list-style-type: none;
+}
+.bold {
+	font-weight: bold;
+}
+#wrapper #footer a {
+	color: #989898;
+}
+#wrapper #footer a:hover {
+	color: #000;
+}
+#wrapper #content #bild #fotoaltbau {
+	float: left;
+	height: 387px;
+	width: 426px;
+	/*margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;*/
+}
+#wrapper #content #bild #fotoabriss {
+	float: left;
+	/*margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;*/
+}
+#wrapper #content #bild #fotoneubau {
+	float: left;
+	/*margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;*/
+}
+
+/*########################## Startseite/ jedes Bild hat seine eingene id ###################################*/
+
+
+#wrapper #content a #bachelorthesis {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #mediathek {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #profil {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #betonexperimente {
+	margin-bottom: 71px;
+}
+#wrapper #content a #aarhus {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #energiehaus {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #winzerhaus {
+	float: left;
+	margin-right: 79px;
+	margin-bottom: 71px;
+}
+#wrapper #content a #frankfurt {
+	float: left;
+	margin-bottom: 71px;
+}
+
+/*########################## Projektübersicht ###################################*/
+
+.overview_project {
+	float: left;
+	height: 160px;
+	width: 370px;
+	margin-right: 137px;
+	margin-bottom: 70px;
+}
+.lastdiv {
+	margin-right: 0px;/*diese klasse dient dazu, den seitenabstand nach rechts auszuschalten. Ich habe sie in der Projektübersicht bei den rechten divs        	    angewendet, damit Projekte zweireihig angeordnet sind*/
+}
+#wrapper #content .overview_project img {
+	float: left;/*hier wird festgelegt, dass der Text in der Projektübersicht, jeweils links am Bild vorbei floatet*/
+	margin-right: 55px;/*hier wird der Abstand zwischen Bild und Text in der Projektübersicht festgelegt*/
+}
+#wrapper #content .overview_project h2 {
+	font-size: 12px;
+	font-weight: bold;
+}
+#wrapper #content .overview_project p {
+	margin-top: 8px;
+}
+
+/*########################## KONTAKT/PROFIL ###################################*/
+
+.top_image {/*Jedes Anfangsbild auf der Kontakt und Profilseite hat die gleichen Eigenschaften. Diese werden über die Klasse .top_image festgelegt. Der untere Abstand bei den Startbildern wird über den Text geregelt!*/
+	margin-bottom: 20px;
+}
+#wrapper #content table {/*Tabellen gibt es auf den Profilseiten und auf der Kontaktseite. hier wird der Abstand zum footer festgelegt.   */
+	padding-bottom: 50px;
+}
+.info_contact {/*diese formatiert den Text auf der Kontaktseite. Achtung der Text in der Tabelle wird über die allgemeinen Regeln formatiert */
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: bold;
+}
+.green {/*diese klasse habe ich auf die mail-addresse auf der Kontatkseite  angewendet*/
+	color: #a2c015;
+}
+
+/*############################################# IMPRESSUM #######################################*/
+
+#wrapper #content #impressum {/*hier wird der Abstand des Impressums von oben und unten geregelt*/
+	height: auto;
+	width: 877px;
+	margin-top: 90px;
+}
+#wrapper #content #impressum p {
+	margin-top: 20px;
+}
+#wrapper #content p .info_contact.green a {
+	color: #a2c015;
+}
+
+#wrapper #content .bild .leftImage {
+	float: left;
+}
+#header #logo p .font33bold {
+	font-size: 33px;
+	display: inline;
+	font-weight: normal;
+}
+#header #logo p .font33bold span {
+	font-weight: bold;
+	color: #a2c015;
+	display: inline;
+}
+#footer {
+	height: 100px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#footer ul li {
+	float: right;
+	text-align: right;
+	display: table;
+	line-height: 37px;
+}
+#footer ul li a {
+		vertical-align: middle;
+		display: table-cell;
+}
+#footer ul {
+	float: right;
+	width: 500px;
+	margin-top: 41px;
+	list-style-type: none;
+	margin-right: 41px;
+}
+#footer ul li a:hover {
+	color: #000;
+}
+.schriftgrau {
+	color: #999;
+}
+
+.clearfix {
+	clear: both;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--Die metatags beinhalten wichtige Hintergrundinformation für Suchmaschinen-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--UTF-8 ist der europäische Zeichensatz, automatisch eingefügt von dreamweaver!-->
+<meta http-equiv="content-language" content="de" />
+<!--Verwendete Sprache, "de" für deutsch. Die gewünschte Information wird zwischen die Anführungsstrichen am Ende geschrieben-->
+<meta name="author" content="Stefanie Günter" />
+<meta name="reply-to" content="stefanie.guenter@googlemail.com" />
+<meta name="description" content="Online Portfolio von Stefanie Günter, Studentin an der msa | muenster school of architecture" />
+<!--In der Description wird ein kurzer Text (2 Zeilen) eingetragen, der bei Google als Seitenbeschreibung auftaucht-->
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Stefanie Günter.de</title>
+<!-- TemplateEndEditable -->
+<!--Reiterinformation. Diese Information sollte für jede Seite anders sein...z.b. Projektname mit Name Author-->
+
+<link href="../css/standard.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<!--##################body###################-->
+<body onload="MM_preloadImages('../images/allgemein/obenbutton_hover.png','../images/allgemein/kontaktbutton_hover.png')">
+<!--Das Muster im Hintergrund liegt als gekacheltes Bild im body--> 
+<!--#################header##################-->
+<div id="header"> 
+  <!--Im header befinden sich drei divs: Logo, Nav1(Projekte/Profil/Kontakt), Nav2 (Unternavigation). Die Position des "headers" muss relativ sein, damit sich alle Elemente, die im header sind, an der Position des heades orientieren und nicht am restlichen Inhalt des headers-->
+  <div id="logo">
+    <p><a href="../index.html" class="font36bold">Stefanie</a></p>
+    <p><a href="../index.html" class="font36bold">Günter</a></p>
+  </div>
+  <!--################################ Navigation 1 #############################################--> 
+  <!--Die Listen (ul) im header müssen eine eindeutige id bekommen, da sie unterschiedliche Eigenschaften haben sollen-->
+  <ul id="nav1">
+    <li><a href="../kontakt/kontakt/kontakt.html" id="nav1-3">Kontakt</a></li>
+    <li><a href="../profil/vita/vita.html" id="nav1-2">Profil</a></li>
+    <li><a href="../projekte/uebersicht/projekt_uebersicht.html" id="nav1-1">Projekte</a></li>
+  </ul>
+  <!--################################ Navigation 2 #############################################--> 
+  <!--Die Liste <Nav2> ist ein Bibliothekselement, da es sich je nach Auswahl in <Nav1> verändert. Bibliothkeselemente werden noch vor dem Erstellen der Vorlagendatei angelegt! Bearbeitbare Bereiche werden in der Vorlagendatei festgelgt-->
+  <!-- TemplateBeginEditable name="EditNav2" -->
+  <div id="nav2"><!-- #BeginLibraryItem "/Library/nav2-projekte.lbi" -->
+    <ul>
+      <li><a id="nav2-1" href="../projekte/betonexperimente/beton.html">+ Concrete</a></li>
+      <li><a id="nav2-2" href="../projekte/bauko/energiehaus.html">+ Zweite Haut</a></li>
+      <li><a id="nav2-3" href="../projekte/mediathek/mediathek.html">+ Mediathek</a></li>
+      <li><a id="nav2-4" href="../projekte/frankfurt/frankfurt.html">+ Wand[el]</a></li>
+      <li><a id="nav2-5" href="../projekte/aarhus/aarhus.html">+ Green Ties</a></li>
+      <li><a id="nav2-6" href="../projekte/mandelring/winzerhaus.html">+ Winzerhaus</a></li>
+      <li><a id="nav2-7" href="../projekte/ba/bachelorthesis.html">+ Bachelor-Thesis</a></li>
+    </ul>
+    <!-- #EndLibraryItem --></div>
+  <!-- TemplateEndEditable -->
+  </li>
+  </ul>
+  <!--Die Navigation ist eine Liste. Liste ist von vorne nach hinten geschrieben, hat  "float right" und "text align right". Zusätzlich hat jedes "li" einen Abstand nach rechts. Die Position des "Div nav2" ist "absolut" und orientiert sich am header, dessen Position "relativ" ist--> 
+</div>
+<!--############################## Wrapper mit Inhalt ###########################-->
+<div id="wrapper"> 
+  <!--############ hier beginnt der bearbeitbare Bereich für den Inhalt des Contents / Auswahl des Bereichs, Einfügen, Vorlagenobjekte, 
+Bearbeitbarer Bereich###########--> 
+  <!-- TemplateBeginEditable name="EditContent" -->
+  <div id="content">
+    <div id="startbild">
+    <img src="../images/ba/ba_start.jpg" width="877" height="412" alt="Umgebungsmodell" /></div><!--Das Startbild hat eine eindeutige id und wiederholt sich auf jeder Projektseite. Projektbilder hingegen bekommen keine id, da sie sich bzw sich die Eigenschaften wiederholen!-->
+    <div class="text"> KONZEPT
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_1.jpg" alt="Umgebung" width="877" height="410"/></div>
+    <div class="text">
+      <h1>STADTTEIL</h1>
+      <p>Schwarzplan | Luftbild Grundstück</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_2.gif" alt="Konzept" width="877" height="392"/></div>
+    <div class="text">
+      <h1>RAUMKONZEPT</h1>
+      <p>Der Zwischenraum als neuer Raum mit Funktion | Einblick | Ausblick | Durchblick</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_3.jpg" alt="Arbeitsmodell 1:100" width="877" height="463"/></div>
+    <div class="text">
+      <h1>ARBEITSMODELL</h1>
+      <p>M 1:100</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_4.gif" alt="Lageplan / Raumfunktion" width="877" height="530"/></div>
+    <div class="text">
+      <h1>LAGEPLAN + PIKTOGRAMM</h1>
+      <p> Extrovertiert / Introvertiert<br>
+        1 Oberstufe / 2 Naturwissenschaften / 3 Mittelpunkt Bestand / 4 Innenhof / 5 Aula halböffentlich / 6 Ganztags / 7 Mensa / 8 Schulhof</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_5.gif" alt="Grundriss EG" width="877" height="442"/></div>
+    <div class="text">
+      <h1>ERDGESCHOSS</h1>
+      <p> Die Klassenräume sind zum ruhigen Innenhof orientiert</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_6.gif" alt="Grundriss OG1" width="877" height="445"/></div>
+    <div class="text">
+      <h1>1.OBERGESCHOSS</h1>
+      <p> Die Klassenräume sind nun zur Straße hin orientiert.<br />
+        Durch die wechselnde Ausrichtung entstehen spanneden Raumfolgen. </p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_7.gif" alt="Schnitt" width="877" height="151"/></div>
+    <div class="text">
+      <h1>SCHNITT</h1>
+      <p> Mit Blick zur Zeppelinschule</p>
+    </div>
+    <div class="bild"><img src="../images/ba/ba_8.jpg" alt="Modellfoto" width="877" height="427"/></div>
+    <div class="text">
+      <h1>Abgabemodell</h1>
+      <p> M 1:100</p>
+    </div>
+  </div>
+  <!-- TemplateEndEditable --> 
+   <!--################################ footer ##################################-->
+</div>
+  <div id="footer">
+    <ul>
+      <li><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nachobenbutton','','../images/allgemein/obenbutton_hover.png',1)"><img src="../images/allgemein/obenbutton.png" alt="nach oben" width="51"   height="37" id="nachobenbutton" /></a><a href="#"></a></li>
+      <li><a href="mailto:sg@stefanieguenter.de" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('kontaktbutton','','../images/allgemein/kontaktbutton_hover.png',1)"><img src="../images/allgemein/kontaktbutton.png" alt="kontakt" width="61" height="37" id="kontaktbutton" /></a><a href="mailto:sg@stefanieguenter.de"></a></li>
+      <li><a href="../kontakt/kontakt/kontakt.html" class="schriftgrau">impressum - Stefanie Günter 2013</a></li>
+    </ul>
+  </div>
+</body>
+</html>
